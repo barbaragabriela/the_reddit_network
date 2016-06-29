@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Subreddit connections</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="js/sigma.min.js"></script>
+        <script src="js/sigma.fisheye.js"></script>
+        <script src="js/sigma.parseGexf.js"></script>
+        <script src="js/sigma.parseJson.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="js/showGraph.js"></script>
+    </head>
+    <body>
+        <!-- URL shortened to http://goo.gl/ReMvh -->
+        <div id="main">
+            <h1 id="main-title">Popular nodes of network of subreddits top users interact with</h1>
+            <p>
+            This network shows the nodes with +330 to ~1500 degrees
+                <ul>
+                    <li><b>Nodes:</b> 138</li>
+                    <li><b>Edges:</b> 3869</li>
+                    <li><b>Average Degree:</b> 116.923</li>
+                </ul>
+            </p>
+            <p align="center">
+            <table id="table">
+              <tr>
+                <td><b><a target="_blank" href="http://redditmetrics.com/top">Top Subreddits</a></b></td>
+                <td><b>Top Subreddits in Network</b></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/AskReddit">/r/AskReddit</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/gifs">/r/gifs</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/funny">/r/funny</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/WTF">/r/WTF</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/todayilearned">/r/todayilearned</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/mildlyinteresting">/r/mildlyinteresting</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/pics">/r/pics</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/AdviceAnimals">/r/AdviceAnimals</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/science">/r/science</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/AskReddit">/r/AskReddit</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/worldnews">/r/worldnews</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/Showerthoughts">/r/Showerthoughts</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/IAma">/r/IAma</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/dataisbeautiful">/r/dataisbeautiful</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/announcements">/r/announcements</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/pics">/r/pics</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/videos">/r/videos</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/woahdude">/r/woahdude</a></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://redditmetrics.com/r/gaming">/r/gaming</a></td>
+                <td><a target="_blank" href="http://redditmetrics.com/r/worldnews">/r/worldnews</a></td>
+              </tr>
+            </table>
+            </p>
+            <p id="type" hidden="true">top_combined_80precent</p>
+            <div id="graph-wrapper">
+                <div id="graph"></div>
+                <div id="controls">
+                    <button id="reset-graph">Reset graph</button>
+                    <button id="toggle-hiding">Hide unconnected networks</button>
+                </div>
+                <div class="right footnote">Powered by <div class="sigma-font">sigma.js</div>. Best viewed in <a target="_blank" href="http://www.google.com/chrome">Google Chrome</a></div>
+            </div>
+            <br />
+            <div id="footnote" class="footnote">
+                This graph was produced with <a target="_blank" class="sigma-font" href="http://sigmajs.org">sigma.js</a> by <a target="_blank" href="http://www.reddit.com/user/barbaragabriela">barbaragabriela</a>.
+            <div>
+        </div>
+    </body>
+</html>

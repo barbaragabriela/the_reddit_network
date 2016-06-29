@@ -19,7 +19,13 @@ function init() {
 
   // Parse a GEXF encoded file to fill the graph
   // (requires "sigma.parseGexf.js" to be included)
-  sigInst.parseGexf('data/subreddits.gexf');
+  // sigInst.parseGexf('data/subreddits.gexf');
+  var filename = document.getElementById('type').innerHTML;
+  var file = 'data/'+filename+'.gexf'
+  console.log(file);
+  sigInst.parseGexf(file); 
+  // sigInst.parseGexf('data/tagged_communities.gexf'); //amazing!!
+  // sigInst.parseJson('data/subreddits.json');
 
   // Bind events :
   var hideUnconnected = function(event){
