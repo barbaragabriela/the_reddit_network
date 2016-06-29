@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Subreddit connections</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="js/sigma.min.js"></script>
+        <script src="js/sigma.fisheye.js"></script>
+        <script src="js/sigma.parseGexf.js"></script>
+        <script src="js/sigma.parseJson.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="js/showGraph.js"></script>
+    </head>
+    <body>
+        <!-- URL shortened to http://goo.gl/ReMvh -->
+        <div id="main">
+            <h1 id="main-title">Communities of network of subreddits top users interact with</h1>
+            <p>
+                <ul>
+                    <li><b>Nodes:</b> 2420</li>
+                    <li><b>Edges:</b> 196095</li>
+                    <li><b>Average Degree:</b> 162.062</li>
+                    <li><b>Graph Density:</b> 0.067</li>
+                    <li><b>Betweenness or Average Path Lenght:</b> 2.034</li>
+                    <li><b>Network diameter:</b> 4</li>
+                    <li><b>Modularity:</b> 0.464</li>
+                    <li><b>Clusters:</b> 14</li>
+                    <li><b>Average Clustering Coefficient:</b> 0.664</li>
+                    <li><b>Total triangles:</b> 6960030</li>
+                </ul>
+            </p>
+            <p id="type" hidden="true">top_combined_comunities</p>
+            <div id="graph-wrapper">
+                <div id="graph"></div>
+                <div id="controls">
+                    <button id="reset-graph">Reset graph</button>
+                    <button id="toggle-hiding">Hide unconnected networks</button>
+                </div>
+                <div class="right footnote">Powered by <div class="sigma-font">sigma.js</div>. Best viewed in <a target="_blank" href="http://www.google.com/chrome">Google Chrome</a></div>
+            </div>
+            <br />
+            <div id="footnote" class="footnote">
+                This graph was produced with <a target="_blank" class="sigma-font" href="http://sigmajs.org">sigma.js</a> by <a target="_blank" href="http://www.reddit.com/user/barbaragabriela">barbaragabriela</a>.
+            <div>
+        </div>
+    </body>
+</html>

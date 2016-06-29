@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <title>Subreddit connections</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="js/sigma.min.js"></script>
+        <script src="js/sigma.fisheye.js"></script>
+        <script src="js/sigma.parseGexf.js"></script>
+        <script src="js/sigma.parseJson.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="js/showGraph.js"></script>
+    </head>
+    <body>
+        <!-- URL shortened to http://goo.gl/ReMvh -->
+        <div id="main">
+            <h1 id="main-title">Network of subreddits top users interact with</h1>
+            <p>
+                <ul>
+                    <li><b>Nodes:</b> 2420</li>
+                    <li><b>Edges:</b> 196095</li>
+                    <li><b>Average Degree:</b> 162.062</li>
+                </ul>
+            </p>
+            <table id="table">
+               <tr>
+                  <td><b><a target="_blank" href="http://www.karmawhores.net/">Top Users</a></b></td>
+                  <td><b>Karma</b></td>
+                  <td><b>Comments</b></td>
+                  <td><b>Posts</b></td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/ani625/">ani625</a></td>
+                  <td>2575076</td>
+                  <td> 731</td>
+                  <td> 947</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Thehealeroftri/">Thehealeroftri</a></td>
+                  <td>1412359</td>
+                  <td> 932</td>
+                  <td> 388</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/motha_effin_kitty_yo/">motha_effin_kitty_yo</a></td>
+                  <td>372474</td>
+                  <td> 647</td>
+                  <td> 900</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/dick-nipples/">dick-nipples</a></td>
+                  <td>1264254</td>
+                  <td> 1000</td>
+                  <td> 95</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/kijafa/">kijafa</a></td>
+                  <td>1428853</td>
+                  <td> 369</td>
+                  <td> 574</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/n8thegr8/">n8thegr8</a></td>
+                  <td>409887</td>
+                  <td> 555</td>
+                  <td> 925</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/straydog1980/">straydog1980</a></td>
+                  <td>1666109</td>
+                  <td> 566</td>
+                  <td> 206</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/davidreiss666/">davidreiss666</a></td>
+                  <td>2417670</td>
+                  <td> 820</td>
+                  <td> 998</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/ibleeedorange/">ibleeedorange</a></td>
+                  <td>5696635</td>
+                  <td> 847</td>
+                  <td> 954</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/_vargas_/">_vargas_</a></td>
+                  <td>2426171</td>
+                  <td> 552</td>
+                  <td> 623</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/mike_pants/">mike_pants</a></td>
+                  <td>2724674</td>
+                  <td> 996</td>
+                  <td> 985</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/way_fairer/">way_fairer</a></td>
+                  <td>2748098</td>
+                  <td> 587</td>
+                  <td> 26</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/isai76/">isai76</a></td>
+                  <td>3385333</td>
+                  <td> 968</td>
+                  <td> 896</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Editingandlayout/">Editingandlayout</a></td>
+                  <td>339601</td>
+                  <td> 949</td>
+                  <td> 983</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/likwitsnake/">likwitsnake</a></td>
+                  <td>623354</td>
+                  <td> 995</td>
+                  <td> 828</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/horse_you_rode_in_on/">horse_you_rode_in_on</a></td>
+                  <td>434299</td>
+                  <td> 974</td>
+                  <td> 969</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/RamsesThePigeon/">RamsesThePigeon</a></td>
+                  <td>1612496</td>
+                  <td> 954</td>
+                  <td> 989</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/bubblr/">bubblr</a></td>
+                  <td>3764809</td>
+                  <td> 583</td>
+                  <td> 1000</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/mepper/">mepper</a></td>
+                  <td>3156462</td>
+                  <td> 840</td>
+                  <td> 997</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Jux_/">Jux_</a></td>
+                  <td>1450464</td>
+                  <td> 964</td>
+                  <td> 993</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/awildsketchappeared/">awildsketchappeared</a></td>
+                  <td>1872703</td>
+                  <td> 1000</td>
+                  <td> 114</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Poem_for_your_sprog/">Poem_for_your_sprog</a></td>
+                  <td>1263277</td>
+                  <td> 954</td>
+                  <td> 10</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Iraniangenius/">Iraniangenius</a></td>
+                  <td>2167337</td>
+                  <td> 804</td>
+                  <td> 275</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Painmatrix/">Painmatrix</a></td>
+                  <td>1841213</td>
+                  <td> 966</td>
+                  <td> 190</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/-eDgaR-/">-eDgaR-</a></td>
+                  <td>1488229</td>
+                  <td> 962</td>
+                  <td> 618</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/APOSTOLATE/">APOSTOLATE</a></td>
+                  <td>1448605</td>
+                  <td> 977</td>
+                  <td> 2</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/warlizard/">warlizard</a></td>
+                  <td>1355739</td>
+                  <td> 918</td>
+                  <td> 770</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/danrennt98/">danrennt98</a></td>
+                  <td>1353468</td>
+                  <td> 962</td>
+                  <td> 857</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/smeeee/">smeeee</a></td>
+                  <td>1343383</td>
+                  <td> 964</td>
+                  <td> 54</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Donald_Keyman/">Donald_Keyman</a></td>
+                  <td>1304335</td>
+                  <td> 939</td>
+                  <td> 672</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/ethan_kahn/">ethan_kahn</a></td>
+                  <td>2166007</td>
+                  <td> 496</td>
+                  <td> 987</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Proteon/">Proteon</a></td>
+                  <td>2151260</td>
+                  <td> 479</td>
+                  <td> 983</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/JimKB/">JimKB</a></td>
+                  <td>1966827</td>
+                  <td> 1000</td>
+                  <td> 982</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/onlysame1/">onlysame1</a></td>
+                  <td>1893106</td>
+                  <td> 998</td>
+                  <td> 98</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/strallweat/">strallweat</a></td>
+                  <td>371055</td>
+                  <td> 959</td>
+                  <td> 844</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/anutensil/">anutensil</a></td>
+                  <td>2982602</td>
+                  <td> 848</td>
+                  <td> 996</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Unidan/">Unidan</a></td>
+                  <td>2496912</td>
+                  <td> -1</td>
+                  <td> -1</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/arbili/">arbili</a></td>
+                  <td>462415</td>
+                  <td> 1000</td>
+                  <td> 1000</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/j0be/">j0be</a></td>
+                  <td>2529060</td>
+                  <td> 469</td>
+                  <td> 601</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Kevlaryarmulke/">Kevlaryarmulke</a></td>
+                  <td>1833266</td>
+                  <td> 559</td>
+                  <td> 966</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/TheCannon/">TheCannon</a></td>
+                  <td>452495</td>
+                  <td> 999</td>
+                  <td> 998</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/maxwellhill/">maxwellhill</a></td>
+                  <td>3167794</td>
+                  <td> 231</td>
+                  <td> 996</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/mattythedog/">mattythedog</a></td>
+                  <td>328277</td>
+                  <td> 700</td>
+                  <td> 313</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Scopolamina/">Scopolamina</a></td>
+                  <td>1855585</td>
+                  <td> -1</td>
+                  <td> -1</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/immorta1/">immorta1</a></td>
+                  <td>427655</td>
+                  <td> 682</td>
+                  <td> 951</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/preggit/">preggit</a></td>
+                  <td>526155</td>
+                  <td> 210</td>
+                  <td> 863</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/dummystupid/">dummystupid</a></td>
+                  <td>658347</td>
+                  <td> 269</td>
+                  <td> 779</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/GallowBoob/">GallowBoob</a></td>
+                  <td>6909108</td>
+                  <td> 318</td>
+                  <td> 940</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/1Voice1Life/">1Voice1Life</a></td>
+                  <td>4077818</td>
+                  <td> 604</td>
+                  <td> 963</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/lobo2ffs/">lobo2ffs</a></td>
+                  <td>3246374</td>
+                  <td> 999</td>
+                  <td> 1000</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/SlimJones123/">SlimJones123</a></td>
+                  <td>2345026</td>
+                  <td> 911</td>
+                  <td> 993</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/StickleyMan/">StickleyMan</a></td>
+                  <td>3523504</td>
+                  <td> 327</td>
+                  <td> 950</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Mattryd7/">Mattryd7</a></td>
+                  <td>551899</td>
+                  <td> 329</td>
+                  <td> 934</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/down_vote_magnet/">down_vote_magnet</a></td>
+                  <td>350063</td>
+                  <td> 999</td>
+                  <td> 567</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/Libertatea/">Libertatea</a></td>
+                  <td>3505532</td>
+                  <td> 996</td>
+                  <td> 975</td>
+               </tr>
+               <tr>
+                  <td><a target="_blank" href="http://www.reddit.com/u/pepsi_next/">pepsi_next</a></td>
+                  <td>9924056</td>
+                  <td> 853</td>
+                  <td> 1000</td>
+               </tr>
+            </table>
+            <p id="type" hidden="true">top_combined</p>
+            <div id="graph-wrapper">
+                <div id="graph"></div>
+                <div id="controls">
+                    <button id="reset-graph">Reset graph</button>
+                    <button id="toggle-hiding">Hide unconnected networks</button>
+                </div>
+                <div class="right footnote">Powered by <div class="sigma-font">sigma.js</div>. Best viewed in <a target="_blank" href="http://www.google.com/chrome">Google Chrome</a></div>
+            </div>
+            <br />
+            <div id="footnote" class="footnote">
+                This graph was produced with <a target="_blank" class="sigma-font" href="http://sigmajs.org">sigma.js</a> by <a target="_blank" href="http://www.reddit.com/user/barbaragabriela">barbaragabriela</a>.
+            <div>
+        </div>
+    </body>
+</html>
